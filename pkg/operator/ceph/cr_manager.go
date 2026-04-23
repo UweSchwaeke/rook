@@ -132,7 +132,7 @@ func (o *Operator) addToManager(m manager.Manager, c *controllerconfig.Context, 
 }
 
 func (o *Operator) startCRDManager(context context.Context, mgrErrorCh chan error) {
-	logger.Info("setting up schemes")
+	logger.Info("setting up schemes. testee")
 	// Setup Scheme for all resources
 	scheme := runtime.NewScheme()
 	for _, f := range resourcesSchemeFuncs {
