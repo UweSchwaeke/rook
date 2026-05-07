@@ -233,7 +233,7 @@ spec:
   #   crashcollector:
   resources:
     osd:
-      request: { cpu: "200m", memory: "2Gi" }
+      requests: { cpu: "200m", memory: "2Gi" }
       limits: { memory: "3Gi" }
     mon:
       requests: { cpu: "100m", memory: "512Mi" }
